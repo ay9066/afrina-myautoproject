@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--  <?xml version="1.0" encoding="UTF-8"?>-->
+<suite name="MCT Test SUite" thread-count="4">
+
+	<!-- Test -->
+	<test name="MCT Smoke Test Cases">
+		<classes>
+			<class name="myautoproject.testrunner.SmokeTestWithTestNG">
+				<methods>
+					<include name="login" />
+					<include name="logOut" />
+ 					<include name="signUP" /> 
+ 					<include name="myAccount" /> 
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+	<!-- Test -->
+	<!-- <test name="MCT Regression Test Cases">
+		<classes>
+			<class name="myautoproject.testrunner.RegressionTestWithTestNG">
+				<methods>
+					<include name="myAccountOptions" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+</suite>
